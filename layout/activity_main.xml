@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/encryptionimage2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.loginsqlite.MainActivity">
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:hint="Input"
+        />
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnMD5"
+        android:text="Encrypt MD5"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttondesign"/>
+
+
+    <Button
+        android:id="@+id/btnEncodeBase64"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Encrypt base64"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttondesign"/>
+
+    <Button
+        android:id="@+id/btnDecodeBase64"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Decrypt base64"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttondesign"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnSHA1"
+        android:text="Encrypt SHA1"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttondesign"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnSHA224"
+        android:text="Encrypt SHA224"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttondesign"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnSHA256"
+        android:text="Encrypt SHA256"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttondesign"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnSHA384"
+        android:text="Encrypt SHA384"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttondesign"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnSHA512"
+        android:text="Encrypt SHA512"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttondesign"/>
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:hint="Output" />
+</LinearLayout>
